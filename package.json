@@ -1,0 +1,19 @@
+{
+  "name": "gym-application",
+  "version": "1.0.0",
+  "description": "A simple Gym Application with GitHub Actions CI",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "run": "node server.js",
+    "test": "node --test test/app.test.js"
+  },
+  "keywords": [
+    "gym",
+    "fitness",
+    "nodejs",
+    "github-actions"
+  ],
+  "author": "Uriel",
+  "license": "MIT"
+}

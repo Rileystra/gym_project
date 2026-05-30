@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitLife Gym Application</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <h1>FitLife Gym</h1>
+      <a href="#join">Join Now</a>
+    </nav>
+    <section>
+      <h2>Train smarter. Feel stronger.</h2>
+      <p>A simple gym application built with HTML, CSS, JavaScript, Node.js, and GitHub Actions.</p>
+      <a class="btn" href="#plans">View Plans</a>
+    </section>
+  </header>
+
+  <main>
+    <section id="plans" class="section">
+      <h2>Membership Plans</h2>
+      <div id="plansContainer" class="cards"></div>
+    </section>
+
+    <section class="section split">
+      <div>
+        <h2>BMI Calculator</h2>
+        <p>Enter your weight and height to calculate your BMI.</p>
+        <form id="bmiForm" class="form">
+          <input type="number" id="weight" placeholder="Weight in kg" step="0.1" required />
+          <input type="number" id="height" placeholder="Height in metres e.g. 1.75" step="0.01" required />
+          <button type="submit">Calculate BMI</button>
+        </form>
+        <p id="bmiResult" class="result"></p>
+      </div>
+
+      <div id="join">
+        <h2>Register Member</h2>
+        <p>Add a new gym member.</p>
+        <form id="memberForm" class="form">
+          <input type="text" id="name" placeholder="Full name" required />
+          <input type="email" id="email" placeholder="Email address" required />
+          <select id="plan">
+            <option>Basic Plan</option>
+            <option>Standard Plan</option>
+            <option>Premium Plan</option>
+          </select>
+          <button type="submit">Register</button>
+        </form>
+        <p id="memberResult" class="result"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 FitLife Gym. Built for GitHub Actions practice.</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background: #f4f8fb; color: #17202a; line-height: 1.6; }
+.hero { min-height: 70vh; background: linear-gradient(135deg, #101820, #1f7a8c); color: white; padding: 30px; }
+nav { max-width: 1100px; margin: 0 auto 100px; display: flex; align-items: center; justify-content: space-between; }
+nav h1 { font-size: 1.7rem; }
+nav a, .btn { color: white; background: #ffb703; padding: 12px 20px; text-decoration: none; border-radius: 999px; font-weight: bold; }
+.hero section { max-width: 900px; margin: auto; text-align: center; }
+.hero h2 { font-size: clamp(2.4rem, 7vw, 4.8rem); margin-bottom: 15px; }
+.hero p { max-width: 680px; margin: 0 auto 30px; font-size: 1.15rem; }
+.section { max-width: 1100px; margin: 45px auto; padding: 0 25px; }
+.section h2 { margin-bottom: 20px; color: #101820; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px; }
+.card { background: white; padding: 25px; border-radius: 18px; box-shadow: 0 10px 25px rgba(0,0,0,.08); }
+.card h3 { color: #1f7a8c; margin-bottom: 8px; }
+.price { font-size: 2rem; font-weight: bold; margin: 12px 0; }
+.card ul { padding-left: 20px; }
+.split { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+.split > div { background: white; padding: 30px; border-radius: 18px; box-shadow: 0 10px 25px rgba(0,0,0,.08); }
+.form { display: grid; gap: 12px; margin-top: 18px; }
+input, select, button { padding: 13px; border-radius: 10px; border: 1px solid #ccd6dd; font-size: 1rem; }
+button { border: none; background: #1f7a8c; color: white; font-weight: bold; cursor: pointer; }
+button:hover { background: #145766; }
+.result { margin-top: 15px; font-weight: bold; color: #1f7a8c; }
+footer { text-align: center; padding: 25px; background: #101820; color: white; }
+@media (max-width: 700px) { nav { margin-bottom: 70px; } nav, .split { gap: 18px; } .hero { padding: 22px; } }
